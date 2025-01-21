@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import style from "./style.module.css"
 import { favoriteContext } from '../../../Context/FavoriteContext'
+import {Helmet} from "react-router-dom"
 function Favorite() {
     let { favorites, setFavorites } = useContext(favoriteContext)
     function handleDeleteFav(id) {
@@ -9,6 +10,11 @@ function Favorite() {
       }
     return (
         <>
+        <Helmet>
+            <title>
+                Favorite
+            </title>
+        </Helmet>
             <section id='Fav'>
                 <div className={style.favorite}>
                     <div className={style.favorite__title}>Favorite</div>

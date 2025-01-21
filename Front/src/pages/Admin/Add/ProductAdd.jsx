@@ -6,6 +6,7 @@ import * as Yup from "yup"
 import axios from 'axios'
 import { useNavigate } from 'react-router'
 import { productContext } from '../../../Context/ProductsContext';
+import {Helmet} from "react-router-dom"
 function ProductAdd() {
   const AddSchema = Yup.object().shape({
     name: Yup.string()
@@ -28,8 +29,11 @@ function ProductAdd() {
 
   }
   return (
-
+      
     <div>
+      <Helmet>
+        <title>Product Add</title>
+      </Helmet>
       <div className={style.formik}>
       <Formik 
         initialValues={{
