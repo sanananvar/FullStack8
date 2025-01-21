@@ -6,6 +6,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    gap: 30px;
     .servicess_wrapper{
         width: 60%;
         height: 90%;

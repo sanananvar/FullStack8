@@ -15,6 +15,10 @@ function UserNavbar() {
         navigate("/")
         
     }
+    function goToAdminAdd() {
+        navigate("/admin/add")
+        
+    }
     useEffect(() => {
         const handleScroll = () => {
             if (window.scrollY > 100) {
@@ -40,7 +44,7 @@ function UserNavbar() {
                             <li onClick={goToHome}>HOME</li>
                             <li>ABOUT US</li>
                             <li>BLOG</li>
-                            <li>CONTACT</li>
+                            <li onClick={goToAdminAdd}>Crud</li>
                             <li><i onClick={goToFav} class="bi bi-balloon-heart"></i>
                             <span>({favorites.length})</span></li>
 

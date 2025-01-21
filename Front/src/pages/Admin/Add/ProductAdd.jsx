@@ -30,7 +30,8 @@ function ProductAdd() {
   return (
 
     <div>
-      <Formik
+      <div className={style.formik}>
+      <Formik 
         initialValues={{
           name: '',
           desc: '',
@@ -47,9 +48,9 @@ function ProductAdd() {
         }
       >
         {({ errors, handleChange, handleBlur, values }) => (
-          <Form >
-
+          <Form className={style.form}>
             {errors.name && <div id="feedback">{errors.name}</div>}
+            <label htmlFor="name">Name</label>
             <input
               type="text"
               name="name"
@@ -58,6 +59,7 @@ function ProductAdd() {
               value={values.name}
             />
             {errors.desc && <div id="feedback">{errors.desc}</div>}
+            <label htmlFor="desc">Description</label>
             <input
               type="text"
               name="desc"
@@ -66,6 +68,7 @@ function ProductAdd() {
               value={values.desc}
             />
             {errors.image && <div id="feedback">{errors.image}</div>}
+            <label htmlFor="image">Image</label>
             <input
               type="text"
               name="image"
@@ -78,13 +81,13 @@ function ProductAdd() {
           </Form>
         )}
       </Formik>
-      <Table striped bordered hover>
+      </div>
+      <Table striped bordered hover className={style.Table}>
         <thead>
           <tr>
-            <th>#</th>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Username</th>
+            <th>image</th>
+            <th> Name</th>
+            <th>desc</th>
           </tr>
         </thead>
         <tbody>
