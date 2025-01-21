@@ -1,0 +1,40 @@
+.Team{
+    padding: 10px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    .title{
+        font-size: 30px;
+        font-weight: 700;
+        color: #fd7e14;
+    }
+    .team_wrapper{
+        height: 90%;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .team_card{
+            margin-right: 10px;
+            height: 44%;
+            width: 22%;
+            img{
+                height: 80%;
+                width: 100%;
+                object-fit: cover;
+            }
+            h4{
+                margin-left: 10px;
+            }
+            span{
+                margin-left: 10px;
+            }
+
+        }
+
+    }
+}

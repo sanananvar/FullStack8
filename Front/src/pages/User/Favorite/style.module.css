@@ -1,0 +1,30 @@
+.favorite{
+    height: 1000px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .favorite_wrapper{
+        width: 60%;
+        height: 70%;
+        display: flex;
+
+        .favorite_card{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            height: 300px;
+            width: 400px;
+            img{
+                height: 50%;
+                width: 100%;
+            }
+            button{
+                border: none;
+                background-color: white;
+                
+            }
+        }
+    }
+}

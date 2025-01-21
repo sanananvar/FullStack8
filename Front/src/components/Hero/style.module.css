@@ -1,0 +1,14 @@
+.hero{
+    height: 1000px;
+    width: 100%;
+    background-image: url("https://preview.colorlib.com/theme/banker/images/hero_2.jpg.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 70px;
+    color: white;
+    
+}

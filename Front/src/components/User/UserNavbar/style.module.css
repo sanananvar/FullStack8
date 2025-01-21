@@ -1,0 +1,33 @@
+.header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+}
+.header_wrapper{
+    align-items: center;
+    width: 60%;
+    height: 100%;
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    ul{
+        display: flex;
+        gap: 40px;
+    }
+}
+.scrolled {
+    background-color: white;
+    color: black;
+    .name{
+        color: orange;
+    }
+    ul{
+        li:nth-child(1){
+            color: orange;
+        }
+
+    }
+  }
